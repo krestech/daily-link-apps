@@ -12,6 +12,7 @@
     .wrapper {
         width: 100%;
         margin-top: 50px;
+        overflow: hidden;
     }
 
     .wrapper .text {
