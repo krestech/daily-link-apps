@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     body {
         background-color: #EFEFEF;
         padding: 0;
@@ -29,7 +29,6 @@
     .text-store {
         display: flex;
         justify-content: center;
-        gap: 15px;
         width: 100%;
         align-items: center;
     }
@@ -72,8 +71,6 @@
         border-radius: 10px;
         position: relative;
         transform: rotate(-0.08turn);
-        /* bottom: 70px;
-        left: -20px; */
         bottom: 70px;
         left: -5px;
     }
@@ -82,8 +79,6 @@
         width: 40%;
         border-radius: 10px;
         position: relative;
-        /* right: 15px;
-        bottom: 10px; */
         transform: rotate(-0.08turn);
         right: -70px;
     }
@@ -92,8 +87,6 @@
         width: 40%;
         border-radius: 10px;
         position: relative;
-        /* bottom: -200px;
-        left: -30px; */
         transform: rotate(-0.08turn);
         top: -95px;
         left: 170px;
@@ -103,10 +96,52 @@
         width: 40%;
         border-radius: 10px;
         position: relative;
-        /* bottom: -200px;
-        left: -30px; */
         transform: rotate(-0.08turn);
         top: -115px;
         left: -220px;
     }
+} */
+
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .bg-wrap {
+    width: 100%;
+    /* padding: 0;
+    margin: 0; */
+    overflow: hidden;
+    height: 100vh;
+    background: url("/assets/bg-image.png") no-repeat;
+    position: relative;
+  }
+
+  .main-wrapper {
+    /* display: flex;
+    margin: auto 0 auto 0;
+    align-items: center;
+    justify-content: center; */
+    background-position: center center;
+    /* margin-top: 665px; */
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/download.png");
+    background-repeat: no-repeat;
+    z-index: 5;
+    position: absolute;
+    top: 240px;
+  }
+
+  .main-wrapper .wrapper img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-wrapper .wrapper {
+    margin-top: 520px;
+  }
 }
