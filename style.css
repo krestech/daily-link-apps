@@ -1,202 +1,46 @@
-/* @media (max-width: 480px) {
-    body {
-        background-color: #EFEFEF;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .wrapper {
-        width: 100%;
-        margin-top: 50px;
-        overflow: hidden;
-    }
-
-    .wrapper .text {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .wrapper .wrap-store {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .text-store {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-    }
-
-    .appstore {
-        display: block;
-        margin:0 auto;
-        text-align: center;
-        background-color: #FF7900;
-        color: #ffff;
-        width: 40%;
-        padding: 3px 35px;
-        margin-top: 30px;
-        border-radius: 15px;
-        border: none;
-        text-decoration: none;
-    }
-
-    .appstore:hover {
-        background-color: #ff993f;
-    }
-
-    .wrap-store .appstore .text-store img {
-        width: 30%;
-        display: block;
-        margin: 0 0;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    .wrapper-img {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .wrapper-img .img1 {
-        width: 40%;
-        border-radius: 10px;
-        position: relative;
-        transform: rotate(-0.08turn);
-        bottom: 70px;
-        left: -5px;
-    }
-
-    .wrapper-img .img2 {
-        width: 40%;
-        border-radius: 10px;
-        position: relative;
-        transform: rotate(-0.08turn);
-        right: -70px;
-    }
-
-    .wrapper-img .img3 {
-        width: 40%;
-        border-radius: 10px;
-        position: relative;
-        transform: rotate(-0.08turn);
-        top: -95px;
-        left: 170px;
-    }
-
-    .wrapper-img .img4 {
-        width: 40%;
-        border-radius: 10px;
-        position: relative;
-        transform: rotate(-0.08turn);
-        top: -115px;
-        left: -220px;
-    }
-} */
-
-/* @media (max-width: 480px) {
-  body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  .bg-wrap {
-    width: 100%;
-    overflow: hidden;
-    height: 100vh;
-    background: url("/assets/bg-image.png") no-repeat;
-    position: relative;
-  }
-
-  .main-wrapper {
-    background-position: center center;
-    width: 100%;
-    height: 100%;
-    background-image: url("/assets/download.png");
-    background-repeat: no-repeat;
-    z-index: 5;
-    position: absolute;
-    top: 240px;
-  }
-
-  .main-wrapper .wrapper img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .main-wrapper .wrapper {
-    margin-top: 520px;
-  }
-} */
-
 @media (max-width: 480px) {
   body {
     padding: 0;
     margin: 0;
+    overflow: hidden;
     box-sizing: border-box;
+    position: relative;
+  }
+
+  .scene {
+    background-image: url("/assets/bg-image2.png");
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    background-image: url("/assets/bg-image2.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
   }
 
-  .main-wrapper {
+  .scene .wrapper-download {
     position: relative;
-    width: 100%;
     height: 100vh;
   }
 
-  .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-  }
-
-  .wrapper img {
+  .scene .wrapper-download .download {
     position: absolute;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 60px;
-    display: block;
-  }
-
-  /* make the css so that is is in the box wrapper */
-  /* .wrapper .sub-wrapper {
-    width: 100%;
-    height: 100vh;
-    display: block;
-  } */
-
-  .wrapper .sub-wrapper {
-    display: block;
-    /* margin-left: auto;
-    margin-right: auto; */
+    bottom: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
-    width: 50%;
+    width: 60%;
   }
 
-  /* .main-wrapper {
-    width: 100%;
-    height: 91vh;
-    position: relative;
-  } */
+  .scene .wrapper-download .content {
+    position: absolute;
+    width: 45%;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 
-  /* .sub-wrapper {
-    margin-top: -500px;
-  } */
+  .wrapper-content img {
+    width: 100%;
+  }
 }
